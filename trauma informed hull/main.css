@@ -1,19 +1,21 @@
+
 /* trauma informed hull */
 
 
 :root{
---tekhelet: #482973;
---mexican-pink: #E6007E;
---silver-lake-blue: #5B89B4;
+--primary: #7A839E;
+--secondary: #F2D2EC;
+--tertiary: #DEDEDD;
 }
+
 /* Font */
 body, input, select, textarea, h1, h2, h3, h4, h5, h6{
 font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
 letter-spacing: unset !important;
-color: #4e4e4e;
+color: #000000;
 }
 strong, b{
-color: #4e4e4e;
+color: #000000;
 }
 p {
     margin: 0 0 1em 0;
@@ -27,67 +29,76 @@ font-size: 1.7rem;
 right: 6.75em;
 }
 #nav ul ul, #nav ul li:hover ul:before, #nav ul li.hover ul:before{
-background-color: var(--tekhelet) !important;
+background-color: var(--tertiary) !important;
 box-shadow: 0 2px 0 0 rgb(0 0 0 / 7%);
 }
 #nav > ul > li > ul > li a:not(.button){
-color: #fff;
-border-top: solid 1px #6d4c9d;
+color: #000000;
+border-top: solid 1px var(--primary);
 }
 #nav > ul > li > ul >li:first-child > a{
 border-top: 0;
 }
 #nav > ul > li > ul > li a:hover{
-background-color: var(--mexican-pink);
+background-color: var(--secondary);
 }
 @media screen and (max-width: 840px){
 #navButton .toggle:before, #navPanel{
-  background-color: var(--tekhelet);
+  background-color: var(--primary);
 }
 #navPanel .link.depth-0{
   font-weight: 600;
 }
 a.toggle:focus:before{
-  outline: 2px dotted var(--mexican-pink);
+  outline: 2px dotted var(--secondary);
 }
 
 }
 input[type="button"]:focus, input[type="submit"]:focus, a:focus, *:focus{
-outline: 2px dotted var(--mexican-pink);
+outline: 2px dotted var(--secondary);
+  color:black;
+  background-color: blue;
 }
 #js-menu-toggle > li:nth-child(2), #js-menu-toggle > li:nth-child(3), #navPanel > nav > a:nth-child(5), #navPanel > nav > a:nth-child(6) {
   display: none;
 }
 #header{
-background-color: var(--tekhelet);
+background-color: var(--primary);
 }
 
 /* Buttons */
 input[type="submit"], input[type="reset"], input[type="button"], .button, input[type="submit"].primary, input[type="reset"].primary, input[type="button"].primary, .button.primary{
-background-color: var(--tekhelet);
+background-color: var(--primary); color:white
 }
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:hover, input[type="submit"].primary:hover, input[type="reset"].primary:hover, input[type="button"].primary:hover, .button.primary:hover{
-background-color: var(--mexican-pink);
-color: #fff;
+background-color: var(--secondary);
+color: black;
 }
+
+input[type="button"]:focus, input[type="submit"]:focus, a:focus, *:focus {
+  outline: 2px dotted var(--secondary);
+  color: black;
+  background-color: var(--secondary) !important;
+}
+
 /* Links */
 a {
-  color: var(--tekhelet);
+  color: var(--primary);
 }
 a.image-link {
   border: unset;
 }
 a:hover{
-color: var(--mexican-pink);
+color: var(--secondary);
 }
 /* Select */
 input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="search"], select, textarea{
-border: 1px solid var(--tekhelet);
+border: 1px solid var(--primary);
 }
 
 input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, input[type="date"]:hover, input[type="search"]:hover, select:hover, textarea:hover, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="date"]:focus, input[type="search"]:focus, select:focus, textarea:focus {
-  border-color: var(--mexican-pink);
-  box-shadow: 0 0 0 2px var(--mexican-pink);
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 2px var(--secondary);
 }
 
 /* Search */
@@ -125,7 +136,7 @@ ul.search-results.item-list.item-list--rich > li {
 margin-bottom: 1rem;
 }
 ul.search-results.item-list.item-list--rich > li > h3 > a {
-color: var(--tekhelet);
+color: var(--primary);
 }
 ul.search-nav.nav.nav--pagination {
 list-style: none;
@@ -165,7 +176,7 @@ font-size: 1.8em !important;
 }
 
 #footer {
-background-color: var(--tekhelet);
+background-color: var(--primary);
 }
 .copyright li {
 color:white;
@@ -181,7 +192,7 @@ font-size: 1.8em !important;
 }
 
 #footer {
-background-color: var(--tekhelet);
+background-color: var(--primary);
 }
 .copyright li {
 color:white;
