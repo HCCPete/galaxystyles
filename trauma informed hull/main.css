@@ -94,6 +94,10 @@ color: var(--secondary);
   color: var(--primary) ;
 }
 
+.list--breadcrumb a:focus{
+  background-color: var(--secondary);
+}
+
 /* Select */
 input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="search"], select, textarea{
 border: 1px solid var(--primary);
