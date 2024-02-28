@@ -166,7 +166,7 @@ label[for="postcode"]
 
 /* Banner */
 #banner {
-background-size: cover !important; 
+/* background-size: cover !important;  stipple effect removed 28/02/2024 */
 }
 
 .supplement__heading {
