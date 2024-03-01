@@ -71,6 +71,10 @@ input[type="button"]:focus, input[type="submit"]:focus, a:focus, *:focus {
 background-color: var(--primary);
 }
 
+#header.alt {
+  background-color:var(--primary);
+}
+
 /* Buttons */
 input[type="submit"], input[type="reset"], input[type="button"], .button, input[type="submit"].primary, input[type="reset"].primary, input[type="button"].primary, .button.primary{
 background-color: var(--primary); color:white
@@ -83,12 +87,6 @@ color: black;
 a {
   color: var(--primary);
 }
-a.image-link {
-  border: unset;
-}
-a:hover{
-color: var(--secondary);
-}
 
 .list--breadcrumb a:hover{
   color: var(--primary) ;
@@ -98,6 +96,12 @@ color: var(--secondary);
   background-color: var(--secondary);
 }
 
+a.image-link {
+  border: unset;
+}
+a:hover{
+color: var(--secondary);
+}
 /* Select */
 input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="search"], select, textarea{
 border: 1px solid var(--primary);
@@ -176,6 +180,7 @@ label[for="postcode"]
 /* Banner */
 #banner {
 /* background-size: cover !important;  stipple effect removed 28/02/2024 */
+  background-image: none;
 }
 
 .supplement__heading {
@@ -191,7 +196,7 @@ color:white;
 
 /* Banner */
 #banner {
-background-size: cover !important; 
+ background-color: var(--primary);
 }
 
 .supplement__heading {
@@ -218,6 +223,8 @@ border-radius: 10px;
 padding-top:1em;
 }
 
+
+
 #header .button, #header.alt .button  {
 box-shadow: unset;
 }
@@ -231,5 +238,5 @@ display: none;
 
 /* Hide banner heading */
 #banner > h2{
-    display: none;
+  /*  display: none; */
 }
